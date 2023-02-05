@@ -1,0 +1,35 @@
+   .buttonDefault {
+      color: #fff;
+      font-weight: 600;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+      border: none;
+      cursor: pointer;
+
+      @media(max-width:320px) {
+         max-width: 100%;
+      }
+   }
+
+
+   .buttonDefault.buttonBusy {
+      color: #A7A7A7;
+      background: #F9F9FA;
+      border: 1px solid #BFC4C9;
+      border-radius: 30px;
+   }
+
+   .buttonDefault.buttonReservation {
+      color: #A7A7A7;
+      background: #FFFFFF;
+      border: 1px solid #BFC4C9;
+      border-radius: 30px;
+   }

@@ -1,0 +1,21 @@
+.items {
+   display: flex;
+   margin-top: 47px;
+
+   @media(max-width:1005px) {
+      margin-top: 8px;
+   }
+
+   @media(max-width:320px) {
+      margin-top: 8px;
+   }
+
+   .item {
+      padding-left: 6px;
+      width: 100%;
+
+      @media(max-width:768px) {
+         padding: 0;
+      }
+   }
+}

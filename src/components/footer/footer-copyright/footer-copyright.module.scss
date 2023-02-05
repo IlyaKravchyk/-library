@@ -1,0 +1,9 @@
+.copyright {
+   font-size: 16px;
+
+   @media(max-width:320px) {
+      font-size: 15px;
+      margin-bottom: 16px;
+      max-width: 210px;
+   }
+}

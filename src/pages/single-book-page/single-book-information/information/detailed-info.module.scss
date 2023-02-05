@@ -1,0 +1,113 @@
+.wrapper {
+   margin-bottom: 62px;
+
+   @media(max-width: 768px) {
+      margin-bottom: 52px;
+   }
+
+   @media(max-width: 320px) {
+      margin-bottom: 42px;
+   }
+
+   .titile {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      margin: 0 auto 32px 0;
+
+      @media(max-width: 768px) {
+         font-weight: 600;
+         font-size: 16px;
+         line-height: 24px;
+      }
+
+      @media(max-width: 320px) {
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 28px;
+         margin-bottom: 16px;
+      }
+   }
+
+   .items {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      @media(max-width: 680px) {
+         flex-direction: column;
+      }
+
+      .item {
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+
+         .property {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            .keys {
+               color: #A7A7A7;
+               font-weight: 600;
+               font-size: 16px;
+               line-height: 24px;
+               flex: 0 0 120px;
+               margin-right: 70px;
+
+               @media(max-width: 768px) {
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 18px;
+                  flex: 0 0 105px;
+                  margin-right: 33px;
+               }
+
+               @media(max-width: 320px) {
+                  font-weight: 500;
+                  font-size: 12px;
+                  line-height: 16px;
+               }
+            }
+
+            .values {
+               font-size: 16px;
+               line-height: 24px;
+               width: 100%;
+
+               @media(max-width: 768px) {
+                  font-size: 14px;
+                  line-height: 18px;
+               }
+
+               @media(max-width: 320px) {
+                  font-weight: 400;
+                  font-size: 12px;
+                  line-height: 16px;
+               }
+
+               .value:not(:last-child) {
+                  margin-bottom: 16px;
+               }
+            }
+         }
+
+
+
+         .property:not(:last-child) {
+            margin-bottom: 16px;
+         }
+      }
+   }
+
+   .item:first-child {
+      max-width: 445px;
+      margin-right: 30px;
+      width: 100%;
+
+      @media(max-width: 680px) {
+         margin-bottom: 16px;
+      }
+   }
+}

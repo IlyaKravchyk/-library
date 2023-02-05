@@ -1,0 +1,44 @@
+.informationRaiting {
+   margin-bottom: 62px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+   @media(max-width:768px) {
+      margin-bottom: 52px;
+   }
+
+   @media(max-width:320px) {
+      margin-bottom: 24px;
+   }
+
+   .starSize {
+      width: 27px;
+      height: 27px;
+   }
+
+   .raitingCoutn {
+      margin-left: 24px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+   }
+}
+
+.titleWrapper {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+   .title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+   }
+
+   .commentCount {
+      color: #A7A7A7;
+      line-height: 24px;
+      margin-left: 6px;
+   }
+}

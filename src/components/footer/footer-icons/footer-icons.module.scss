@@ -1,0 +1,9 @@
+.icons {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+
+   .icon:not(:last-child) {
+      margin-right: 24px;
+   }
+}

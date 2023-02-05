@@ -1,0 +1,30 @@
+.item {
+   font-size: 16px;
+   line-height: 24px;
+
+   .link.click {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      background: linear-gradient(231.58deg, #F83600 -53.35%, #F9D423 297.76%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+   }
+
+
+
+   .count {
+      color: #A7A7A7;
+      font-size: 14px;
+      margin-left: 16px;
+   }
+}
+
+.item:not(:last-child) {
+   margin-bottom: 16px;
+}
+
+.item::first-letter {
+   text-transform: uppercase;
+}

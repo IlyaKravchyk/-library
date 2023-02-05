@@ -1,0 +1,52 @@
+.raitingWrapper {
+   color: #A7A7A7;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+
+   @media(max-width:320px) {
+      flex-wrap: wrap;
+   }
+
+   .star {
+      @media(max-width:320px) {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+   }
+
+   .star:not(:last-child) {
+      padding-right: 10px;
+   }
+}
+
+.raitingTile {
+   margin: auto 0;
+}
+
+.active {
+   fill: #FFBC1F;
+}
+
+.active,
+.hover {
+   @media(max-width:320px) {
+      width: 13px;
+   }
+}
+
+.noRaitingText {
+   margin-left: 24px;
+
+   @media(max-width:320px) {
+      margin: 8px 0 0 0;
+   }
+}
+
+.noRaiting {
+   @media(max-width:565px) {
+      margin-bottom: 16px;
+   }
+}

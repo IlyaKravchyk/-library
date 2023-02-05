@@ -1,0 +1,242 @@
+.wrapper {
+   display: grid;
+   grid-template: repeat(4, auto)/ 1fr;
+   justify-items: center;
+   align-items: start;
+   padding-top: 8px;
+   box-shadow: 0px 2px 4px rgba(191, 196, 201, 0.2), 0px 3px 4px rgba(191, 196, 201, 0.18), 0px 1px 5px rgba(191, 196, 201, 0.24);
+   border-radius: 10px;
+   width: 100%;
+   cursor: pointer;
+
+   @media(max-width:515px) {
+      grid-template: repeat(4, auto)/1fr;
+   }
+
+   .image {
+      margin-bottom: 16px;
+
+      img {
+         border: 1px solid #A7A7A7;
+         border-radius: 10px;
+      }
+   }
+
+   .imageCat {
+      height: 242px;
+      width: 174px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #A7A7A7;
+      border-radius: 10px;
+      margin-bottom: 16px;
+   }
+
+   .raiting {
+      margin-bottom: 16px;
+
+      @media(max-width: 320px) {
+         margin-right: auto;
+         padding-left: 8px;
+      }
+
+      .starSize {
+         width: 20px;
+         height: 20px;
+      }
+   }
+
+   .description {
+      padding: 0 8px;
+      margin-bottom: 28px;
+      display: grid;
+      grid-template: 52px auto / 1fr 176px 1fr;
+      align-items: center;
+      row-gap: 8px;
+
+      @media(max-width:320px) {
+         grid-template: 52px auto/1fr
+      }
+
+      .bookName {
+         grid-row: 1/2;
+         grid-column: 2/3;
+         overflow: hidden;
+         font-weight: 600;
+         display: -webkit-box;
+         -webkit-line-clamp: 3;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+      }
+
+      .author {
+         grid-row: 2/3;
+         grid-column: 2/3;
+         color: #727272;
+      }
+   }
+
+   .button {
+      width: 100%;
+      padding: 0 12px;
+
+      .buttonWrapper {
+         margin-bottom: 16px;
+         height: 40px;
+         border-radius: 20px;
+         overflow: hidden;
+         width: 100%;
+      }
+   }
+}
+
+.wrapper:nth-child(3n+1) {
+   @media(max-width: 1375px) {
+      justify-self: start;
+   }
+
+   @media(max-width: 1115px) {
+      justify-self: center;
+   }
+}
+
+.wrapper:nth-child(3n+3) {
+   @media(max-width: 1375px) {
+      justify-self: end;
+   }
+
+   @media(max-width: 1115px) {
+      justify-self: center;
+   }
+}
+
+.wrapper.wrapperList {
+   display: grid;
+   grid-template: 120px 50px/120px repeat(2, auto);
+   justify-items: stretch;
+   align-items: start;
+   padding: 24px 24px 24px 16px;
+   width: 100%;
+   column-gap: 16px;
+
+   @media(max-width:768px) {
+      grid-template: repeat(2, auto)/120px repeat(2, auto);
+      padding: 16px 24px 16px 16px;
+   }
+
+   @media(max-width:565px) {
+      grid-template: repeat(2, auto)/70px auto;
+      padding: 16px 16px 16px 8px;
+      column-gap: 8px;
+   }
+
+   .starSize {
+      @media(max-width:565px) {
+         width: 13px;
+         height: 13px;
+         margin-bottom: 16px;
+      }
+   }
+
+   .image.imageList,
+   .imageCat {
+      margin-bottom: 0;
+      grid-row: 1/3;
+      grid-column: 1/2;
+
+      @media(max-width:768px) {
+         grid-row: 1/2;
+      }
+   }
+
+   .imageCat {
+      height: 100%;
+      width: 100%;
+
+      @media(max-width:565px) {
+         height: 100px;
+      }
+   }
+
+   .raiting.raitingList {
+      margin-bottom: 0;
+      grid-row: 2/2;
+      grid-column: 2/3;
+      align-self: center;
+
+      @media(max-width:565px) {
+         align-self: start;
+      }
+   }
+
+   .description.descriptionList {
+      grid-row: 1/2;
+      grid-column: 2/5;
+      margin-bottom: 0;
+      width: 100%;
+      display: block;
+
+      @media(max-width:768px) {
+         margin-bottom: 16px;
+      }
+
+      @media(max-width:565px) {
+         grid-column: 2/3;
+         margin-bottom: 3px;
+         padding: 0;
+      }
+
+      .bookName.bookNameList {
+         font-weight: 700;
+         font-size: 24px;
+         line-height: 30px;
+         height: auto;
+         margin-bottom: 8px;
+         display: -webkit-box;
+         -webkit-line-clamp: 3;
+         -webkit-box-orient: vertical;
+         overflow: hidden;
+
+         @media(max-width:565px) {
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            margin-bottom: 3px;
+         }
+      }
+   }
+
+   .description.descriptionList .author {
+      font-size: 16px;
+      line-height: 24px;
+
+      @media(max-width:565px) {
+         font-size: 12px;
+         line-height: 18px;
+      }
+   }
+
+   .button.buttonList {
+      grid-row: 2/3;
+      grid-column: 4/5;
+      margin-left: auto;
+      padding: 0;
+      width: 174px;
+
+      @media(max-width:565px) {
+         grid-row: 3/4;
+         grid-column: 2/3;
+         justify-self: start;
+         margin: 0;
+      }
+
+      .buttonWrapper.buttonWrapperList {
+         margin: 0;
+      }
+   }
+}
+
+.wrapper.wrapperList:last-child {
+   margin-bottom: 0;
+}

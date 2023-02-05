@@ -1,0 +1,41 @@
+.wrapper {
+   font-size: 16px;
+   line-height: 24px;
+   margin-bottom: 62px;
+
+   .title {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      margin-bottom: 32px;
+
+      @media(max-width: 320px) {
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 28px;
+         margin-bottom: 24px;
+      }
+   }
+
+   .items>.item>.paragraph {
+      font-weight: 600;
+      font-size: 16px;
+   }
+
+   .item:not(:last-child) {
+      margin-bottom: 32px;
+   }
+
+   .paragraph {
+      margin-bottom: 16px;
+   }
+
+   .lists {
+      margin-left: 30px;
+
+      @media(max-width: 320px) {
+         font-size: 15px;
+         line-height: 20px;
+      }
+   }
+}

@@ -1,0 +1,23 @@
+.person {
+   @media(max-width:1005px) {
+      display: none;
+   }
+
+   .wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+   }
+
+   .greetings {
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18px;
+      margin-right: 15px;
+   }
+
+   .avatar {
+      height: 58px;
+      width: 58px;
+   }
+}

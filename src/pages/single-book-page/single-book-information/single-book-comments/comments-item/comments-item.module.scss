@@ -1,0 +1,49 @@
+.item {
+
+   .container {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 16px;
+
+      @media(max-width: 320px) {
+         margin-bottom: 12px;
+      }
+
+
+      .wrapper {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         flex-wrap: wrap;
+
+
+         @media(max-width: 320px) {
+            display: block;
+         }
+      }
+
+      .userImage,
+      .userName {
+         margin-right: 24px;
+      }
+   }
+
+   .starSize {
+      width: 20px;
+      height: 20px;
+   }
+
+   .description {
+      color: #363636;
+      margin-top: 16px;
+   }
+}
+
+.item:not(:last-child) {
+   margin-bottom: 45px;
+
+   @media(max-width: 320px) {
+      margin-bottom: 35px;
+   }
+}

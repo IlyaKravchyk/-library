@@ -1,0 +1,36 @@
+.wrapperTitle {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   max-width: 350px;
+   padding-bottom: 16px;
+   margin-bottom: 16px;
+   border-bottom: 1px solid #EBEBEB;
+
+   .title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+
+      @media(max-width:768px) {
+         font-size: 600px;
+         font-size: 16px;
+         line-height: 24px;
+      }
+
+      @media(max-width:320px) {
+         font-weight: 700;
+         font-size: 18px;
+         line-height: 28px;
+      }
+   }
+
+   .title::first-letter {
+      text-transform: uppercase;
+   }
+
+   .countTitle {
+      color: #A7A7A7;
+      margin-left: 6px;
+   }
+}
